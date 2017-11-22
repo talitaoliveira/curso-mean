@@ -36,7 +36,8 @@ gulp.task('deps.css', () => {
 
 gulp.task('deps.fonts', () => {
     return gulp.src([
-        '...'
+        'node_modules/font-awesome/fonts/*.*',
+        'node_modules/admin-lte/bootstrap/fonts/*.*'
     ])
     .pipe(gulp.dest('public/assets/fonts'))
 })
